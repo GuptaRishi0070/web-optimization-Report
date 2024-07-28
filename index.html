@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A sample page for performance optimization and best practices." />
+    <title>Sample Optimization Task</title>
+
+    <link rel="preload" href="style.min.css" as="style" />
+
+    <style>
+       body{margin:0;font-family:Arial,sans-serif}header{background-color:#4caf50;color:#fff;padding:1rem;text-align:center}main{padding:1rem}footer{background-color:#333;color:#fff;padding:1rem;text-align:center}img{display:block;width:100%;height:auto}button{font-size:16px;padding:.5rem 1rem;border:none;background-color:#f44336;color:#fff;cursor:pointer;border-radius:4px}button:hover{background-color:#d32f2f}
+
+    </style>
+
+    <script src="script.min.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Optimization Task</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Gallery</h2>
+            <img src="coding.jpg" alt="Coding Image" loading="lazy" width="600" height="400" />
+            <img src="GitLab.jpg" alt="GitLab Image" loading="lazy" width="600" height="400" />
+        </section>
+        <section>
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna eros. Fusce mollis libero ac orci facilisis, eu ullamcorper risus scelerisque.</p>
+            <p>Donec lacinia, diam in vehicula consectetur, velit ex scelerisque nunc, id varius eros turpis ac magna. Vestibulum sit amet sem ac nunc porta blandit.</p>
+        </section>
+        <!-- Accessible button placed logically -->
+        <section>
+            <button aria-label="Close" onclick="handleClose()">X</button>
+        </section>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>
